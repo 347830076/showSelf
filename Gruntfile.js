@@ -56,6 +56,10 @@ module.exports = function(grunt) {
 						"src/css/api.css",
 						"src/css/index.css",
 						"src/css/common.css"
+					],
+					'dist/css/works.min.css': [
+						"src/css/api.css",
+						"src/css/common.css"
 					]
 				}
 			}
@@ -150,7 +154,7 @@ module.exports = function(grunt) {
 			html: {
 				expand: true, // 需要该参数
 				cwd: 'src/',
-				src: ['*/*'], // 会把tpl文件夹+文件复制过去
+				src: ['images/*','html/*'], // 会把tpl文件夹+文件复制过去
 				dest: 'dist',
 			}
 		},
