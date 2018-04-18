@@ -1,41 +1,217 @@
 <!DOCTYPE HTML>
 
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title>个人作品</title>
 		<link href="../images/logo.png" rel="shortcut icon">
-		<!-- build:css ../css/works.min.css -->	
+		<!-- build:css ../css/works.min.css -->
 		<link rel="stylesheet" type="text/css" href="../css/api.css" />
 		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
 		<!-- endbuild -->
+		<script src="../js/center_img.js" type="text/javascript" charset="utf-8"></script>
 
 		<style type="text/css">
-			.list > li{
+			.list>li {
+				width: 360px;
 				font-size: 20px;
 				padding: 10px 0;
 			}
-			.list > li a:hover{
+			
+			.list>li a:hover {
 				color: #FACD00;
+			}
+			.list>li>a>span{
+				font-size: 14px;
+				color: #01AAED;
+			}
+			.swiper-container {
+				position: absolute;
+				left: -10000px;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.3);
+				z-index: 9999999;
+				/*display: none;/*/
+			}
+			.close{
+				position: absolute;
+				right: 30px;
+				top: 30px;
+				width: 60px;
+				height: 60px;
+				line-height: 50px;
+				text-align: center;
+				font-size: 40px;
+				border: 1px solid #fff;
+				color: #fff;
+				border-radius: 100%;
+				cursor: pointer;
+				z-index: 1;
+			}
+			.swiper-slide {
+				width: 100%;
+				/*text-align: center;*/
+				font-size: 18px;
+				/*background: #fff;*/
+				/*display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;*/
+				/*-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;*/
 			}
 		</style>
 	</head>
+
 	<body>
 		<div class="header">
-		    <ul class="nav pageSize">		      
-		        <li><a href="index.html">首页</a></li>
-		        <li class="active"><a href="works.html">个人作品</a></li>
-		    </ul>
+			<ul class="nav pageSize">
+				<li>
+					<a href="index.html">首页</a>
+				</li>
+				<li class="active">
+					<a href="works.html">个人作品</a>
+				</li>
+			</ul>
 		</div>
 		<div class="header_bottom">&nbsp;</div>
 		<ul class="pageSize list">
-			<li><a href="http://azooo.com">广州修客信息科技有限公司</a></li>
-			<li><a href="javascript:void(0)">加速度师傅（app）</a></li>
-			<li><a href="javascript:void(0)">加速度（微信公众号）</a></li>
-			<li><a href="javascript:void(0)">碎屏互助（微信公众号）</a></li>
-			<li><a href="javascript:void(0)">加速度手机维修（小程序）</a></li>
-			<li><a href="http://taomeiapp.com/">淘美app</a></li>
-			<li><a href="https://github.com/347830076">我的github</a></li>
+			<li>
+				<a href="http://azooo.com">加速度官网<span>（有链接）</span></a>
+			</li>
+			<li data-id="1">
+				<a href="javascript:void(0)">加速度手机维修（小程序）<span>（有图片）</span></a>
+			</li>
+			<li data-id="2">
+				<a href="javascript:void(0)">加速度师傅（app）<span>（有图片）</span></a>
+			</li>
+			<li data-id="3">
+				<a href="javascript:void(0)">加速度业务管理后台<span>（有图片）</span></a>
+			</li>
+			<li data-id="4">
+				<a href="javascript:void(0)">加速度门店管理系统<span>（有图片）</span></a>
+			</li>
+			<li>
+				<a href="javascript:void(0)">加速度（微信公众号）<span>（可微信关注）</span></a>
+			</li>
+			<li>
+				<a href="javascript:void(0)">碎屏互助（微信公众号）<span>（已改名）</span></a>
+			</li>			
+			<li>
+				<a>淘美app<span>（未上线）</span></a>
+			</li>
+			<li>
+				<a href="https://github.com/347830076">我的github<span>（有链接）</span></a>
+			</li>
 		</ul>
+
+		<!--加速度师傅（app）-->
+		<div class="swiper-container" id="swiper1">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="../images/m1.png" onload="center_img(this)" /></div>
+				<div class="swiper-slide"><img src="../images/m2.png" onload="center_img(this)" /></div>
+				<div class="swiper-slide"><img src="../images/m3.png" onload="center_img(this)" /></div>
+				<div class="swiper-slide"><img src="../images/m5.png" onload="center_img(this)" /></div>
+				<div class="swiper-slide"><img src="../images/m6.png" onload="center_img(this)" /></div>
+				<div class="swiper-slide"><img src="../images/m7.jpg" onload="center_img(this)" /></div>
+				<div class="swiper-slide"><img src="../images/m8.jpg" onload="center_img(this)" /></div>
+				<div class="swiper-slide"><img src="../images/m9.jpg" onload="center_img(this)" /></div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination" id="swiper_page1"></div>
+			<div class="close" data-id="1">x</div>
+		</div>
+		<!--end 加速度师傅（app）-->
+		<!--小程序-->
+		<div class="swiper-container" id="swiper2">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="../images/s1.jpg" onload="center_img(this)" /></div>
+				<div class="swiper-slide"><img src="../images/s2.jpg" onload="center_img(this)" /></div>
+				<div class="swiper-slide"><img src="../images/s3.jpg" onload="center_img(this)" /></div>
+				<div class="swiper-slide"><img src="../images/s5.jpg" onload="center_img(this)" /></div>
+				<div class="swiper-slide"><img src="../images/s6.jpg" onload="center_img(this)" /></div>
+				<div class="swiper-slide"><img src="../images/s7.jpg" onload="center_img(this)" /></div>
+				<div class="swiper-slide"><img src="../images/s8.jpg" onload="center_img(this)" /></div>
+				<div class="swiper-slide"><img src="../images/s9.jpg" onload="center_img(this)" /></div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination" id="swiper_page2"></div>
+			<div class="close" data-id="2">x</div>
+		</div>
+		<!--end 小程序-->
+		<!--加速度业务管理后台-->
+		<div class="swiper-container" id="swiper3">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="../images/h1.png" onload="center_img(this)" /></div>
+				<div class="swiper-slide"><img src="../images/h2.png" onload="center_img(this)" /></div>
+				<div class="swiper-slide"><img src="../images/h3.png" onload="center_img(this)" /></div>
+				<div class="swiper-slide"><img src="../images/h4.png" onload="center_img(this)" /></div>
+				<div class="swiper-slide"><img src="../images/h5.png" onload="center_img(this)" /></div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination" id="swiper_page3"></div>
+			<div class="close" data-id="3">x</div>
+		</div>
+		<!--end 加速度业务管理后台-->
+		<!--加速度门店管理系统-->
+		<div class="swiper-container" id="swiper4">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="../images/e1.png" onload="center_img(this)" /></div>
+				<div class="swiper-slide"><img src="../images/e2.png" onload="center_img(this)" /></div>
+				<div class="swiper-slide"><img src="../images/e3.png" onload="center_img(this)" /></div>
+				<div class="swiper-slide"><img src="../images/e4.png" onload="center_img(this)" /></div>
+				<div class="swiper-slide"><img src="../images/e5.png" onload="center_img(this)" /></div>
+				<div class="swiper-slide"><img src="../images/e6.png" onload="center_img(this)" /></div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination" id="swiper_page4"></div>
+			<div class="close" data-id="4">x</div>
+		</div>
+		<!--end 加速度门店管理系统-->
+
+		<script src="../js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		
+		<script type="text/javascript">
+			var swiper1 = new Swiper('#swiper1', {
+				pagination: '#swiper_page1',
+				paginationClickable: true,
+				spaceBetween: 30,
+			});
+			var swiper2 = new Swiper('#swiper2', {
+				pagination: '#swiper_page2',
+				paginationClickable: true,
+				spaceBetween: 30,
+			});
+			var swiper3 = new Swiper('#swiper3', {
+				pagination: '#swiper_page3',
+				paginationClickable: true,
+				spaceBetween: 30,
+			});
+			var swiper4 = new Swiper('#swiper4', {
+				pagination: '#swiper_page4',
+				paginationClickable: true,
+				spaceBetween: 30,
+			});
+			$('.list>li').click(function(){
+				$('#swiper' + $(this).attr('data-id')).css('left','0px');
+			});
+			$('.close').click(function(){
+				$('#swiper' + $(this).attr('data-id')).css('left','-10000px');				
+			});
+			
+		</script>
 	</body>
+
 </html>
