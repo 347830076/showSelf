@@ -59,7 +59,8 @@ module.exports = function(grunt) {
 					],
 					'dist/css/works.min.css': [
 						"src/css/api.css",
-						"src/css/common.css"
+						"src/css/common.css",
+						"src/css/swiper.min.css",
 					]
 				}
 			}
@@ -125,7 +126,7 @@ module.exports = function(grunt) {
 					//					src: ['<%= config.static_dest %>static/css/*.css']
 				}
 			},
-			js: ['dist/js/build.js'],
+			js: ['dist/js/*.js'],
 			html: ['dist/html/*.html'],
 			options: { //替换静态文件引地址前缀
 				filePrefixer: function(url) {
@@ -154,7 +155,7 @@ module.exports = function(grunt) {
 			html: {
 				expand: true, // 需要该参数
 				cwd: 'src/',
-				src: ['images/*','html/*'], // 会把tpl文件夹+文件复制过去
+				src: ['images/*','html/*','js/*'], // 会把tpl文件夹+文件复制过去
 				dest: 'dist',
 			}
 		},
