@@ -1,0 +1,807 @@
+.w {
+    width: 1200px;
+    max-height: 1200px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/*.firstPage{*/
+/*background-color: #001125;*/
+/*}*/
+/*.secondPage{*/
+/*background-color: #fff;*/
+
+/*}*/
+/*.page3{*/
+/*width: 1920px;*/
+/*height: 1080px;*/
+/*background-image: url(../img/s1.png);*/
+/*background-position: left center;*/
+/*background-repeat: no-repeat;*/
+/*}*/
+.thirdPage {
+    width: 1920px;
+    height: 1080px;
+    background-image: url(../img/aBg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /*background-size: 100%;*/
+}
+
+nav {
+    width: 100%;
+    background-color: #001125;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+}
+
+.logo {
+    float: left;
+    margin: 0;
+    padding: 16px 0;
+    height: 64px;
+    line-height: 26px;
+    color: rgba(0, 0, 0, .85);
+    font-weight: 500;
+}
+
+.icon-logo {
+    margin-right: 190px;
+    width: 142px;
+    height: 31px;
+    background-image: url(../img/logo.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+#myMenu {
+    height: 70px;
+    padding-top: 21px;
+}
+
+#myMenu > li {
+    width: 108px;
+    height: 28px;
+    padding: 0 20px;
+    float: left;
+    line-height: 28px;
+    text-align: center;
+}
+
+#myMenu > li.active {
+    background-image: linear-gradient(90deg, #3762fc 0%, #51dbf5 100%),
+    linear-gradient(#48e541, #48e541);
+    box-shadow: 0px 10px 20px 0px rgba(3, 172, 250, 0.5);
+    border-radius: 14px;
+}
+
+#myMenu > li > a {
+    color: #fff;
+}
+
+/*one*/
+.oneL p:first-of-type {
+    width: 540px;
+    font-family: Gotham-Bold;
+    font-size: 40px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #ffffff;
+}
+
+.oneL p:nth-child(2) {
+    width: 574px;
+    /*height: 159px;*/
+    font-family: Gotham-Book;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #8795a2;
+    margin-top: 40px;
+}
+
+.oneL p:last-of-type {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 40px;
+    background-image: linear-gradient(90deg, #3762fc 0%, #51dbf5 100%),
+    linear-gradient(#48e541, #48e541);
+    background-blend-mode: normal, normal;
+    box-shadow: 0px 10px 20px 0px rgba(3, 172, 250, 0.5);
+    border-radius: 25px;
+    color: #fff;
+}
+
+.oneR {
+    width: 645px;
+    height: 645px;
+    background-image: url(../img/h2.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    margin-right: -20px;
+    position: relative;
+    -webkit-animation: spin 20s infinite linear;
+    -moz-animation: spin 20s infinite linear;
+    -ms-animation: spin 20s infinite linear;
+    -o-animation: spin 20s infinite linear;
+    animation: spin 20s infinite linear;
+
+}
+.inR{
+    width: 221px;
+    height: 237px;
+    background-image: url(../img/h1.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -118.5px;
+    margin-left: -110.5px;
+    -webkit-animation: spinIner 20s infinite linear;
+    -moz-animation: spinIner 20s infinite linear;
+    -ms-animation: spinIner 20s infinite linear;
+    -o-animation: spinIner 20s infinite linear;
+    animation: spinIner 20s infinite linear;
+}
+
+@-webkit-keyframes spin {
+    0%   { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    0%   { -moz-transform: rotate(0deg); }
+    100% { -moz-transform: rotate(360deg); }
+}
+@-ms-keyframes spin {
+    0%   { -ms-transform: rotate(0deg); }
+    100% { -ms-transform: rotate(360deg); }
+}
+@-o-keyframes spin {
+    0%   { -o-transform: rotate(0deg); }
+    100% { -o-transform: rotate(360deg); }
+}
+@-webkit-keyframes spinIner {
+    0%   { -webkit-transform: rotate(360deg); }
+    100% { -webkit-transform: rotate(0deg); }
+}
+@-moz-keyframes spinIner {
+    0%   { -moz-transform: rotate(360deg); }
+    100% { -moz-transform: rotate(0deg); }
+}
+@-ms-keyframes spinIner {
+     0%   { -ms-transform: rotate(360deg); }
+     100% { -ms-transform: rotate(0deg); }
+ }
+@-o-keyframes spinIner {
+    0%   { -o-transform: rotate(360deg); }
+    100% { -o-transform: rotate(0deg); }
+}
+@keyframes spinIner {
+    0%   { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+}
+/*two*/
+.twoT {
+    text-align: center;
+    font-family: Gotham-Bold;
+    font-size: 48px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 48px;
+    letter-spacing: 0px;
+    color: #283c55;
+    margin-bottom: 100px;
+}
+
+.twoL {
+    height: 160px;
+    margin-bottom: 60px;
+}
+
+.twoL:last-of-type{
+    margin-bottom: 0;
+    /*transform:translateY(-200px)*/
+}
+.secondPage.active .twoL:nth-child(2){
+    animation:dragTop 1s ease both;
+}
+.secondPage.active .twoL:nth-child(3){
+    animation:dragTop 1s ease .2s both;
+
+}
+.secondPage.active .twoL:nth-child(4){
+    animation:dragTop 1s ease .3s both;
+}
+.sImg {
+    width: 160px;
+    height: 160px;
+    margin-right: 80px;
+
+}
+
+.sImg.firstImg {
+    background-image: url(../img/s1.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.sImg.secondImg {
+    background-image: url(../img/s2.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.sImg.thirdImg {
+    background-image: url(../img/s3.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.sTitle p:first-of-type {
+    width: 265px;
+    font-family: Gotham-Bold;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 48px;
+    letter-spacing: 0px;
+    color: #283c55;
+}
+
+.sTitle p:last-of-type {
+    width: 929px;
+    font-family: Gotham-Book;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #8795a2;
+    margin-top: 42px;
+}
+
+@keyframes dragTop {
+    0% {
+        opacity:0;
+        transform:translateY(200px)
+    }
+    60% {
+        opacity:1;
+        /*transform:translateY(20px)*/
+    }
+    /*90% {*/
+        /*transform:translateY(5px)*/
+    /*}*/
+    /*97% {*/
+        /*transform:translateY(1px)*/
+    /*}*/
+    100% {
+        transform:translateY(0px)
+    }
+}
+
+
+/*third*/
+.thirdT {
+    font-family: Gotham-Bold;
+    font-size: 48px;
+    text-align: center;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 48px;
+    letter-spacing: 0px;
+    color: #ffffff;
+}
+
+.thirdC {
+    font-family: Gotham-Book;
+    font-size: 24px;
+    text-align: center;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 48px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.thirdB li {
+    float: left;
+    width: 20%;
+    padding-top: 100px;
+
+    font-family: Gotham-Book;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 48px;
+    letter-spacing: 0px;
+    color: #8795a2;
+    text-align: center;
+
+}
+
+.thirdB li.phone {
+    background-image: url(../img/a1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.thirdB li.transaction {
+    background-image: url(../img/a2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.thirdB li.car {
+    background-image: url(../img/a3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.thirdB li.lawyer {
+    background-image: url(../img/a4.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.thirdB li.health {
+    background-image: url(../img/a5.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.thirdB li.haircut {
+    background-image: url(../img/a6.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.thirdB li.nannies {
+    background-image: url(../img/a7.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.thirdB li.maternity {
+    background-image: url(../img/a8.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.thirdB li.training {
+    background-image: url(../img/a9.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.thirdB li.design {
+    background-image: url(../img/a10.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/*four*/
+.fourthPge p {
+    text-align: center;
+    font-family: Gotham-Book;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 48px;
+    letter-spacing: 0px;
+    color: #8795a2;
+}
+
+.fourthPge .fourthT {
+    font-size: 48px;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #283c55;
+}
+
+.fourthPge .fourthC {
+    margin-top: 20px;
+    margin-bottom: 18px;
+}
+
+.fourthB {
+    height: 711px;
+    background-image: url(../img/map.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.fourthB:before, .fourthB:after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/icon.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    margin-top: -22px;
+}
+
+.fourthB:before {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 50%;
+    left: 0px;
+}
+
+/*five*/
+.fifthPge .w > p {
+    text-align: center;
+    font-family: Gotham-Book;
+    font-size: 48px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 48px;
+    letter-spacing: 0px;
+    color: #ffffff;
+}
+
+.fifthPge .w .fifthC {
+    font-size: 24px;
+    margin-top: 77px;
+    margin-bottom: 90px;
+}
+
+.fifthL {
+    width: 50%;
+    text-align: center;
+    padding-bottom:10px ;
+}
+.fifthL:first-of-type{
+    border-right: 1px solid #21253e;
+}
+.fifthL .f_img {
+    width: 140px;
+    height: 140px;
+    background-color: #38425c;
+    border-radius: 50%;
+    margin: 0 auto 48px;
+}
+
+.fifthL .f_img.Huang {
+    background-image: url(../img/t1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.fifthL .f_img.Lu {
+    background-image: url(../img/t2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.fifthL > p {
+    font-family: Gotham-Bold;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #ffffff;
+}
+
+.fifthL > p:first-of-type {
+    font-family: Gotham-Bold;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.fifthL > p:nth-child(3) {
+    font-size: 14px;
+    font-family: Gotham-Book;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #ffffff;
+    margin-top: 8px;
+
+}
+
+.fifthL > p:nth-child(4) {
+    width: 40px;
+    height: 4px;
+    background-image: linear-gradient(90deg,
+    #3762fc 0%,
+    #51dbf5 100%),
+    linear-gradient(
+            #ffffff,
+            #ffffff);
+    background-blend-mode: normal,
+    normal;
+    box-shadow: 0px 10px 20px 0px rgba(3, 172, 250, 0.5);
+    border-radius: 2px;
+    margin: 20px auto 20px;
+
+}
+.fifthL > p:nth-child(5) {
+    font-family: Gotham-Bold;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-size: 14px;
+    color: #8795a2;
+}
+.fifthTeamListL{
+    margin: 0 auto 40px;
+    width: 50%;
+}
+.TeamListL .f_img {
+    width: 100px;
+    height: 100px;
+    background-color: #38425c;
+    border-radius: 50%;
+    margin-right:20px;
+    margin-left: 80px;
+}
+.TeamListL .f_img.Xu {
+    background-image: url(../img/t3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.TeamListL .f_img.Lu {
+    background-image: url(../img/t4.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.TeamListL .f_img.Li {
+    background-image: url(../img/t5.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.TeamListL .f_img.Zhang {
+      background-image: url(../img/t6.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+  }
+.TeamListL .f_img.LEON {
+    background-image: url(../img/t6.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.TeamListL p:first-of-type{
+    font-family: Gotham-Bold;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 48px;
+    letter-spacing: 0px;
+    color: #ffffff;
+}
+.TeamListL p:last-of-type {
+    font-family: Gotham-Book;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #8795a2;
+}
+
+/*six*/
+.sixthT{
+    font-family: Gotham-Bold;
+    font-size: 48px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 48px;
+    letter-spacing: 0px;
+    color: #283c55;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.sixthPage p>span{
+    width: 314px;
+}
+.sixthPage p>span:first-of-type{
+    font-family: Gotham-Book;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 48px;
+    letter-spacing: 0px;
+    color: #283c55;
+    text-align: right;
+}
+.sixthPage p>span.cir{
+    width: 52px;
+    height: 52px;
+    background-image: url(../img/cir1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin: 0 50px;
+    position: relative;
+    /*height: 97px;*/
+    margin-top: 15px;
+}
+.sixthPage p>span.line:after{
+    content: '';
+    width: 1px;
+    height: 40px;
+    background-color: rgba(99, 113, 129, 0.2);
+    opacity: 0.2;
+    position: absolute;
+    top: 45px;
+    left: 26px;
+
+}
+.sixthPage p>span:last-of-type{
+    font-family: Gotham-Book;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 48px;
+    letter-spacing: 0px;
+    color: #283c55;
+    text-align: left;
+}
+.sixthL{
+    text-align: center;
+    margin-bottom: 30px;
+}
+/*seven*/
+.seventhPage{
+    width: 1920px;
+    /*height: 1080px;*/
+    background-image: url(../img/pBg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+.seventhT{
+    font-family: Gotham-Bold;
+    font-size: 48px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 48px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 117px;
+    margin-top: -200px;
+}
+.titleList>span{
+    float: left;
+    width: 33.3%;
+    height: 99px;
+}
+.titleList>span{
+    vertical-align: middle;
+    position: relative;
+}
+.rLine:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    height: 80px;
+    background-color: #21253e;
+    margin: auto 0;
+
+}
+.bLine:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 360px;
+    height: 1px;
+    background-color: #21253e;
+    margin: 0 auto;
+
+}
+.titleList > span.onetitle {
+    background-image: url(../img/picon1.png);
+    background-position: 100px  center;
+    background-repeat: no-repeat;
+}
+.titleList > span.twotitle {
+    background-image: url(../img/picon2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.titleList > span.threetitle {
+    background-image: url(../img/picon3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.titleList > span.fourtitle {
+    background-image: url(../img/picon4.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.titleList > span.fivetitle {
+    background-image: url(../img/picon5.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.titleList > span.sixttitle {
+    background-image: url(../img/picon6.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/*eight*/
+.eighthPage{
+    padding-top: 52px !important;
+}
+.eightCont{
+    position: relative;
+    padding-bottom: 290px;
+
+}
+.eightLogo{
+    width: 87px;
+    height: 101px;
+    background-image: url(../img/b1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 60px;
+}
+.eighthPage .eightInfo>p{
+    font-family: Gotham-Book;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #8795a2;
+    background-image: url(../img/b2.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 29px;
+    margin-left: 486px;
+    margin-bottom: 20px;
+}
+.eightInfo{
+    overflow: hidden;
+}
+.eighthPage .eightInfo>p:nth-child(1){
+    margin-top: 40px;
+}
+.eighthPage .eightInfo>p:nth-child(2){
+    background-image: url(../img/b3.png);
+}
+.eighthPage .eightInfo>p:nth-child(3){
+    background-image: url(../img/b4.png);
+    margin-bottom: 0;
+}
+
