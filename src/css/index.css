@@ -29,7 +29,13 @@
 .block_row {
 	margin: 10px 0;
 }
-
+.block_row div{
+	line-height: 25px;
+}
 a {
 	color: dodgerblue;
+}
+
+.b{
+	font-weight: bold;
 }
