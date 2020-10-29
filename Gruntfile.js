@@ -19,8 +19,9 @@ module.exports = function(grunt) {
 			build: {
 				files: {
 					'dist/js/index.min.js': [
+						"src/js/jquery-1.10.2.min.js",
 						"src/js/common.js",
-						"src/js/jquery-1.10.2.min.js"
+						"src/js/wow.min.js"
 					]
 				}
 			}
@@ -55,12 +56,14 @@ module.exports = function(grunt) {
 					'dist/css/index.min.css': [
 						"src/css/api.css",
 						"src/css/index.css",
-						"src/css/common.css"
+						"src/css/common.css",
+						"src/css/animate.min.css",
 					],
 					'dist/css/works.min.css': [
 						"src/css/api.css",
 						"src/css/common.css",
 						"src/css/swiper.min.css",
+						"src/css/animate.min.css",
 					]
 				}
 			}

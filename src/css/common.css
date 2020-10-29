@@ -27,10 +27,30 @@ body {
 	z-index: 9999;
 }
 
+@keyframes bianse{
+	0% {
+		background-color: #fff;
+	}
+	100% {
+		font-size: 40px;
+		background-color: rgba(137, 190, 243, 0.1);
+	}
+}
+@-webkit-keyframes bian{
+	from{
+		background-color: #fff;
+	}
+	to{
+		background-color: rgba(137, 190, 243, 0.1);
+	}
+}
+
 .nav {
 	position: relative;
 	background-color: #fff;
 	height: 70px;
+	-webkit-animation: bianse 1s infinite;
+	animation: bianse 1s infinite;
 }
 
 .nav>li {
@@ -39,7 +59,7 @@ body {
 	height: 70px;
 	font-size: 16px;
 	color: #8b8b8b;
-	border-right: 1px solid #fff;
+	/* border-right: 1px solid #fff; */
 }
 .nav>li>a {
 	display: block;
@@ -54,7 +74,21 @@ body {
 .nav>li>a:hover {
 	color: #facd00;
 	cursor: hand;
+	font-size: 20px;
 }
 .nav .active a{
 	color: #facd00;
+	animation: da 2s infinite;
+}
+
+@keyframes da{
+	from{
+		font-size: 16px;
+	}
+	50%{
+		text-shadow: 40px -20px 1px rgb(243, 115, 115);
+	}
+	to{
+		font-size: 25px;
+	}
 }

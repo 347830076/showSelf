@@ -14,3 +14,16 @@ $(window).scroll(function () {
   	scrollFlag = true;
   },500);
 });
+
+$(function(){
+	var wow = new WOW({
+		// 容器类名
+		boxClass: 'wow',
+		// 定义动画库的公共类
+		animateClass: 'animate__animated',
+		offset: 0,
+		mobile: true,
+		live: true
+	});
+	wow.init();
+})
